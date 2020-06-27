@@ -1,0 +1,214 @@
+.home {
+  position: relative;
+  height: 88vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
+
+  .programmer {
+    margin-top: 3rem;
+    font-size: 3.3rem;
+    font-weight: 900;
+    text-align: center;
+    color: $third-color;
+    margin-left: 0;
+    left: 0;
+    animation: focus-in-contract 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    @keyframes focus-in-contract {
+      0% {
+        letter-spacing: 1em;
+        filter: blur(12px);
+        opacity: 0;
+      }
+      100% {
+        filter: blur(0px);
+        opacity: 1;
+      }
+    }
+
+    @media (min-width: $breakpoint-s) and (orientation: portrait) {
+      font-size: 3.5rem;
+    }
+    @media (min-width: $breakpoint-m) and (orientation: portrait) {
+      font-size: 8rem;
+    }
+    @media (min-width: $breakpoint-xs) and (orientation: landscape) {
+      margin-top: 0rem;
+      font-size: 6rem;
+    }
+    @media (min-width: $breakpoint-m) and (orientation: landscape) {
+      margin-top: 0rem;
+      font-size: 7rem;
+    }
+    @media (min-width: $breakpoint-l) and (orientation: landscape) {
+      margin-top: 3rem;
+      font-size: 10rem;
+    }
+    @media (min-width: $breakpoint-xl) and (orientation: landscape) {
+      margin-top: 1rem;
+      font-size: 12rem;
+    }
+    @media (min-width: $breakpoint-xxl) and (orientation: landscape) {
+      margin-top: 1rem;
+      font-size: 15rem;
+    }
+  }
+
+  &-text {
+    margin: 2rem 1rem;
+    @media (min-width: $breakpoint-s) and (orientation: portrait) {
+      margin: 4rem 2rem;
+    }
+    @media (min-width: $breakpoint-m) and (orientation: portrait) {
+      margin: 3rem 15rem 0 4rem;
+    }
+    @media (min-width: $breakpoint-xs) and (orientation: landscape) {
+      margin: 0rem 16rem 0 3rem;
+    }
+    @media (min-width: $breakpoint-m) and (orientation: landscape) {
+      margin: 0rem 20rem 0 3rem;
+    }
+    @media (min-width: $breakpoint-l) and (orientation: landscape) {
+      margin: 5rem 27rem 0 5rem;
+    }
+    @media (min-width: $breakpoint-xl) and (orientation: landscape) {
+      margin: 1rem 40rem 0 8rem;
+    }
+    @media (min-width: $breakpoint-xxl) and (orientation: landscape) {
+      margin: 1rem 53rem 0 10rem;
+    }
+
+    p:first-child {
+      margin-bottom: 0.5rem;
+      font-size: 1.3rem;
+      font-weight: 500;
+      @media (min-width: $breakpoint-m) and (orientation: portrait) {
+        font-size: 1rem;
+      }
+    }
+    h1 {
+      font-weight: bold;
+      font-size: 1.8rem;
+      margin-right: 3rem;
+
+      @media (min-width: $breakpoint-m) and (orientation: portrait) {
+        font-size: 4rem;
+      }
+      @media (min-width: $breakpoint-m) and (orientation: landscape) {
+        margin-right: 5.5rem;
+      }
+      @media (min-width: $breakpoint-l) and (orientation: landscape) {
+        font-size: 3rem;
+      }
+    }
+
+    p {
+      margin: 1rem 8rem 0 0;
+      line-height: 1.3rem;
+      @media (min-width: $breakpoint-m) and (orientation: portrait) {
+        font-size: 1.5rem;
+        line-height: 2rem;
+      }
+      @media (min-width: $breakpoint-xs) and (orientation: landscape) {
+        font-size: 0.6rem;
+        margin: 1rem 5rem 0 0;
+        line-height: 1rem;
+      }
+      @media (min-width: $breakpoint-m) and (orientation: landscape) {
+        font-size: 0.7rem;
+        margin: 1rem 5.5rem 0 0;
+        line-height: 1.3rem;
+      }
+      @media (min-width: $breakpoint-l) and (orientation: landscape) {
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+        font-weight: 300;
+      }
+    }
+  }
+
+  .my-photo {
+    position: absolute;
+    width: 220px;
+    height: 280px;
+    background-image: url("../../img/zdjecie-removebg-preview.png");
+    background-size: cover;
+    right: 0;
+    bottom: 0;
+    filter: grayscale(100%);
+
+    @media (min-width: $breakpoint-s) and (orientation: portrait) {
+      width: 240px;
+      height: 290px;
+    }
+    @media (min-width: $breakpoint-m) and (orientation: portrait) {
+      width: 350px;
+      height: 600px;
+    }
+    @media (min-width: $breakpoint-xs) and (orientation: landscape) {
+      width: 280px;
+      height: 300px;
+    }
+    @media (min-width: $breakpoint-l) and (orientation: landscape) {
+      width: 400px;
+      height: 600px;
+    }
+    @media (min-width: $breakpoint-xl) and (orientation: landscape) {
+      width: 500px;
+      height: 600px;
+    }
+    @media (min-width: $breakpoint-xxl) and (orientation: landscape) {
+      width: 550px;
+      height: 650px;
+    }
+  }
+
+  .icon-scroll,
+  .icon-scroll:before {
+    position: absolute;
+    left: 50%;
+  }
+
+  .icon-scroll {
+    width: 30px;
+    height: 60px;
+    margin-left: -20px;
+    top: 90%;
+    margin-top: -35px;
+    box-shadow: inset 0 0 0 1px $secondary-color;
+    border-radius: 25px;
+    @media (min-width: $breakpoint-s) and (orientation: portrait) {
+      top: 80%;
+    }
+    @media (min-width: $breakpoint-m) and (orientation: portrait) {
+      top: 93%;
+    }
+    @media (min-width: $breakpoint-m) and (orientation: landscape) {
+      width: 25px;
+      height: 50px;
+    }
+  }
+
+  .icon-scroll:before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    background-color: $secondary-color;
+    margin-left: -4px;
+    top: 8px;
+    border-radius: 4px;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-name: scroll;
+  }
+
+  @keyframes scroll {
+    0% {
+      opacity: 1;
+    }
+
+    100% {
+      opacity: 0;
+      transform: translateY(46px);
+    }
+  }
+}

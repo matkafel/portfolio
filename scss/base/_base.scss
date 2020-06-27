@@ -1,0 +1,27 @@
+body {
+  background-color: $primary-color;
+  /* color: $primary-color; */
+  font-family: $primary-font;
+  width: 100vw;
+  overflow-x: hidden;
+}
+.dark-mode {
+  background-color: $secondary-color;
+  color: $primary-color;
+}
+
+.toggler {
+  position: fixed;
+  left: 2.5rem;
+  bottom: 3rem;
+  z-index: 1;
+  cursor: pointer;
+}
+
+@media (min-width: $breakpoint-xxl) and (orientation: landscape) {
+  .wrapper {
+    position: relative;
+    width: 1600px;
+    margin: 0 auto;
+  }
+}

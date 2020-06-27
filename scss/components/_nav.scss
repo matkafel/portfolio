@@ -1,0 +1,186 @@
+.nav {
+  width: 100vw;
+  height: 12vh;
+
+  .logo {
+    position: fixed;
+    top: 25px;
+    left: 30px;
+    width: 200px;
+    height: 50px;
+    background-image: url("../../img/black.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 999;
+    @media (min-width: $breakpoint-l) and (orientation: landscape) {
+      width: 230px;
+      height: 60px;
+    }
+  }
+
+  .overlay {
+    position: fixed;
+    height: 0%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: $secondary-color;
+    overflow-y: hidden;
+    z-index: 1;
+    transition: 0.5s;
+  }
+
+  .overlay-open {
+    height: 100%;
+  }
+
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .overlay ul {
+    position: relative;
+  }
+
+  .overlay ul li {
+    position: relative;
+    list-style: none;
+    text-align: center;
+    display: block;
+  }
+
+  .overlay ul li a {
+    position: relative;
+    display: inline-block;
+    font-size: 3.5rem;
+    margin-top: 20px;
+    color: $primary-color;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    @media (min-width: $breakpoint-xs) and (orientation: landscape) {
+      font-size: 2rem;
+    }
+    @media (min-width: $breakpoint-l) and (orientation: landscape) {
+      font-size: 3.5rem;
+    }
+  }
+  .overlay ul li a::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background-color: $primary-color;
+    transform: translateY(-50%) scaleX(0);
+    transform-origin: right;
+    transition: 0.5s transform;
+  }
+
+  .overlay ul li a:hover::before {
+    transform: translateY(-50%) scaleX(1);
+    transform-origin: left;
+    transition: 0.5s transform;
+  }
+
+  .open-close-btn {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    text-decoration: none;
+    z-index: 10;
+  }
+
+  @media screen and (max-height: 450px) {
+    .overlay {
+      overflow-y: auto;
+    }
+    .overlay a {
+      font-size: 20px;
+    }
+  }
+
+  /* Hamburger Icon */
+  #hamburger-icon {
+    position: fixed;
+    display: block;
+    width: 50px;
+    height: 39px;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+  }
+
+  #hamburger-icon span {
+    display: block;
+    position: absolute;
+    height: 7px;
+    width: 100%;
+    background-color: $secondary-color;
+    border-radius: 3px;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: 0.25s ease-in-out;
+    -moz-transition: 0.25s ease-in-out;
+    -o-transition: 0.25s ease-in-out;
+    transition: 0.25s ease-in-out;
+  }
+
+  #hamburger-icon span:nth-child(1) {
+    top: 0px;
+  }
+
+  #hamburger-icon span:nth-child(2),
+  #hamburger-icon span:nth-child(3) {
+    top: 16px;
+  }
+
+  #hamburger-icon span:nth-child(4) {
+    top: 32px;
+  }
+
+  #hamburger-icon.hamburger-open span {
+    background-color: $primary-color;
+  }
+
+  #hamburger-icon.hamburger-open span:nth-child(1) {
+    top: 18px;
+    width: 0%;
+    left: 50%;
+  }
+
+  #hamburger-icon.hamburger-open span:nth-child(2) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  #hamburger-icon.hamburger-open span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+
+  #hamburger-icon.hamburger-open span:nth-child(4) {
+    top: 18px;
+    width: 0%;
+    left: 50%;
+  }
+}
