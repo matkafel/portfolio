@@ -478,7 +478,7 @@ body {
   left: 30px;
   width: 200px;
   height: 50px;
-  background-image: url("../../img/black.png");
+  background-image: url("../img/black.png");
   background-size: contain;
   background-repeat: no-repeat;
   z-index: 999;
@@ -844,7 +844,7 @@ body {
   position: absolute;
   width: 220px;
   height: 280px;
-  background-image: url("../../img/zdjecie-removebg-preview.png");
+  background-image: url("../img/zdjecie-removebg-preview.png");
   background-size: cover;
   right: 0;
   bottom: 0;
@@ -1078,47 +1078,47 @@ body {
 }
 
 .projects .portfolio .imgP1 {
-  background: url("../../img/1.jpg");
+  background: url("../img/1.jpg");
   background-size: cover;
 }
 
 .projects .portfolio .imgP2 {
-  background: url("../../img/2.jpg");
+  background: url("../img/2.jpg");
   background-size: cover;
 }
 
 .projects .portfolio .imgP3 {
-  background: url("../../img/3.jpg");
+  background: url("../img/3.jpg");
   background-size: cover;
 }
 
 .projects .portfolio .imgP4 {
-  background: url("../../img/4.jpg");
+  background: url("../img/4.jpg");
   background-size: cover;
 }
 
 .projects .portfolio .imgP5 {
-  background: url("../../img/5.jpg");
+  background: url("../img/5.jpg");
   background-size: cover;
 }
 
 .projects .portfolio .imgP6 {
-  background: url("../../img/6.jpg");
+  background: url("../img/6.jpg");
   background-size: cover;
 }
 
 .projects .portfolio .imgP7 {
-  background: url("../../img/7.jpg");
+  background: url("../img/7.jpg");
   background-size: cover;
 }
 
 .projects .portfolio .imgP8 {
-  background: url("../../img/8.jpg");
+  background: url("../img/8.jpg");
   background-size: cover;
 }
 
 .projects .portfolio .imgP9 {
-  background: url("../../img/9.jpg");
+  background: url("../img/9.jpg");
   background-size: cover;
 }
 
@@ -2412,7 +2412,7 @@ body {
   left: 30px;
   width: 150px;
   height: 50px;
-  background-image: url("../../img/white.png");
+  background-image: url("../img/white.png");
   background-size: contain;
   background-repeat: no-repeat;
 }
