@@ -134,7 +134,7 @@
     background-size: cover;
     right: 0;
     bottom: 0;
-    filter: grayscale(100%);
+    filter: grayscale(80%);
 
     @media (min-width: $breakpoint-s) and (orientation: portrait) {
       width: 240px;
