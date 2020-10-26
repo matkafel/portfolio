@@ -1126,6 +1126,14 @@ body {
   background: url("../img/10.jpg");
   background-size: cover;
 }
+.projects .portfolio .imgP11 {
+  background: url("../img/11.jpg");
+  background-size: cover;
+}
+.projects .portfolio .imgP12 {
+  background: url("../img/12.jpg");
+  background-size: cover;
+}
 
 .projects .portfolio .theCard {
   position: absolute;
